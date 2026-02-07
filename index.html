@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Para Ti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300;400;500;600&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <!-- Floating Hearts Background -->
+    <div id="hearts-bg"></div>
+
+    <!-- Envelope Screen -->
+    <div id="envelope-container" role="button" tabindex="0" aria-label="Abrir carta">
+      <div class="sparkle-ring"></div>
+      <img src="envelope.png" alt="Envelope" id="envelope" />
+      <p class="envelope-text">Toca para abrir</p>
+    </div>
+
+    <!-- Presentation Container -->
+    <div id="presentation">
+
+      <!-- Section 1: Intro -->
+      <section class="slide" id="slide-1">
+        <div class="slide-content">
+          <div class="decorative-heart">&#9829;</div>
+          <h1 class="title-main">Tengo algo que decirte...</h1>
+          <div class="subtitle-line"></div>
+          <p class="subtitle">Algo que llevo guardando en el coraz&oacute;n</p>
+          <img src="cat_heart.gif" class="cat-gif" alt="Cat with heart" />
+          <button class="next-btn" data-next="2">Continuar</button>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="slide" id="slide-2">
+        <div class="slide-content">
+          <div class="quote-decoration">&ldquo;</div>
+          <p class="romantic-text">
+            Cuando estoy contigo siento algo especial, algo que no se da todos los d&iacute;as. 
+            Y no es solo que me gustes, es la <span class="highlight">paz que siento cuando estoy contigo</span>, 
+            la forma en que todo se vuelve m&aacute;s ligero cuando te miro o te escucho re&iacute;r.
+          </p>
+          <div class="heart-divider">
+            <span>&#9829;</span><span>&#9829;</span><span>&#9829;</span>
+          </div>
+          <button class="next-btn" data-next="3">Sigue leyendo</button>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="slide" id="slide-3">
+        <div class="slide-content">
+          <div class="quote-decoration">&ldquo;</div>
+          <p class="romantic-text">
+            Tus ojos tienen algo que no s&eacute; explicar del todo... podr&iacute;a <span class="highlight">perderme en ellos</span> f&aacute;cilmente. 
+            Tienen esa calma que abraza, que tranquiliza, que hace que todo alrededor deje de importar por un momento.
+          </p>
+          <div class="dot-divider">
+            <span></span><span></span><span></span>
+          </div>
+          <p class="romantic-text">
+            Y tu sonrisa... tu sonrisa tiene una forma tan bonita de <span class="highlight">iluminar todo</span>. 
+            A veces pienso que si alguien me preguntara qu&eacute; es algo sencillo que puede alegrarte el d&iacute;a, 
+            dir&iacute;a que es verte sonre&iacute;r.
+          </p>
+          <div class="heart-divider">
+            <span>&#9829;</span><span>&#9829;</span><span>&#9829;</span>
+          </div>
+          <button class="next-btn" data-next="4">Continuar</button>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="slide" id="slide-4">
+        <div class="slide-content">
+          <div class="quote-decoration">&ldquo;</div>
+          <p class="romantic-text">
+            Eres hermosa, pero no solo por fuera. Es tu forma de ser, tu manera de hablar, de moverte, de ver las cosas. 
+            Eres de esas personas que <span class="highlight">se sienten, que se quedan en la mente</span> incluso cuando ya no est&aacute;s cerca. 
+            Y cada momento contigo se siente genuino, bonito, real.
+          </p>
+          <div class="heart-divider">
+            <span>&#9829;</span><span>&#9829;</span><span>&#9829;</span>
+          </div>
+          <button class="next-btn" data-next="5">Sigue leyendo</button>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="slide" id="slide-5">
+        <div class="slide-content">
+          <div class="quote-decoration">&ldquo;</div>
+          <p class="romantic-text">
+            Me haces sentir tranquilo, feliz, con esa emoci&oacute;n bonita de querer seguir conoci&eacute;ndote m&aacute;s. 
+            Como si poco a poco te fueras convirtiendo en <span class="highlight">un lugar donde me gusta estar</span>, 
+            en alguien con quien me siento bien sin tener que fingir nada.
+          </p>
+          <div class="heart-divider">
+            <span>&#9829;</span><span>&#9829;</span><span>&#9829;</span>
+          </div>
+          <button class="next-btn" data-next="6">Continuar</button>
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section class="slide" id="slide-6">
+        <div class="slide-content">
+          <div class="quote-decoration">&ldquo;</div>
+          <p class="romantic-text">
+            Y ahora que se acerca esta fecha tan especial, me puse a pensar... si ese d&iacute;a se trata de compartirlo con 
+            alguien que te mueve el coraz&oacute;n, con alguien que te hace sonre&iacute;r sin darte cuenta, 
+            con alguien cuya presencia se vuelve importante... 
+            <span class="highlight">yo no pensar&iacute;a en nadie m&aacute;s que en ti.</span>
+          </p>
+          <div class="heart-divider">
+            <span>&#9829;</span><span>&#9829;</span><span>&#9829;</span>
+          </div>
+          <button class="next-btn" data-next="7">El final</button>
+        </div>
+      </section>
+
+      <!-- Section 7: Final -->
+      <section class="slide" id="slide-7">
+        <div class="slide-content final-slide">
+          <h1 class="final-title">&#9829;</h1>
+          <p class="romantic-text final-message">
+            Por eso quer&iacute;a decirte que me encantar&iacute;a <span class="highlight">compartir ese d&iacute;a contigo</span>, 
+            hacerlo nuestro, y guardar ese momento como algo bonito entre los dos.
+          </p>
+          <div class="final-question">
+            <h2>&iquest;Quieres ser mi San Valent&iacute;n?</h2>
+          </div>
+          <img src="cat_heart.gif" class="cat-gif cat-final" alt="Cat love" />
+          <div class="buttons" id="letter-buttons">
+            <img src="yes.png" class="btn yes-btn" alt="Yes" />
+            <div class="no-wrapper">
+              <img src="no.png" class="btn no-btn" alt="No" />
+            </div>
+          </div>
+
+          <!-- Celebration -->
+          <div id="celebration" style="display:none">
+            <h2 class="celebration-title">Me haces muy feliz</h2>
+            <img src="cat_dance.gif" class="cat-gif cat-dance" alt="Cat dancing" />
+            <p class="celebration-text">Este San Valent&iacute;n ser&aacute; nuestro</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
