@@ -22,11 +22,42 @@ for (let i = 0; i < 15; i++) {
   setTimeout(createFloatingHeart, i * 200);
 }
 
+// ===== BACKGROUND MUSIC =====
+const backgroundMusic = document.getElementById("background-music");
+let musicStarted = false;
+
+if (backgroundMusic) {
+  backgroundMusic.volume = 0.4; // Volumen al 40%
+  
+  // Intentar reproducir automáticamente (puede fallar por políticas del navegador)
+  backgroundMusic.play().catch(() => {
+    // Si falla, se reproducirá cuando el usuario interactúe
+  });
+  
+  // Iniciar música en el primer clic del usuario en cualquier parte
+  const startMusicOnInteraction = () => {
+    if (!musicStarted && backgroundMusic.paused) {
+      backgroundMusic.play().catch(() => {});
+      musicStarted = true;
+    }
+  };
+  
+  document.addEventListener("click", startMusicOnInteraction, { once: true });
+  document.addEventListener("touchstart", startMusicOnInteraction, { once: true });
+}
+
 // ===== ENVELOPE LOGIC =====
 const envelope = document.getElementById("envelope-container");
 const presentation = document.getElementById("presentation");
 
 envelope.addEventListener("click", () => {
+  // Iniciar música cuando el usuario interactúe
+  if (backgroundMusic) {
+    backgroundMusic.play().catch(() => {
+      // Si falla, no hacer nada
+    });
+  }
+  
   envelope.style.transition = "opacity 0.6s ease, transform 0.6s ease";
   envelope.style.opacity = "0";
   envelope.style.transform = "scale(0.8)";
